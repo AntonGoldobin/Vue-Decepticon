@@ -2,6 +2,7 @@
 
 > A Vue.js project
 
+
 ## Build Setup
 
 ``` bash
@@ -25,6 +26,11 @@ npm run e2e
 
 # run all tests
 npm test
+```
+
+## Bootstrap overrides install
+```
+https://medium.com/@BjornKrols/integrating-and-customising-bootstrap-4-in-vue-js-cbc29ba7688e
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
