@@ -1,7 +1,7 @@
 <template>
   <div id="content">
     <div class="page-title">
-      Загрузка адресной программы
+      Загрузка KPI
       <b-btn variant="primary" class="button-upload button-right" v-b-modal.ap-upload>Загрузить АП</b-btn>
       <b-modal id="ap-upload" hide-footer title="Загрузка адресной программы">
         <p class="my-4">Что-то</p>
@@ -16,8 +16,6 @@
 const items = [
   { isActive: true, age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
   { isActive: false, age: 21, first_name: 'Larsen', last_name: 'Shaw' },
-  { isActive: false, age: 89, first_name: 'Geneva', last_name: 'Wilson' },
-  { isActive: true, age: 38, first_name: 'Jami', last_name: 'Carney' }
 ]
 
 export default {
