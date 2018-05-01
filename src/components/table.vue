@@ -8,6 +8,7 @@
         <b-btn variant="primary" class="button-upload button-right">Загрузить</b-btn>
       </b-modal>
     </div>
+    <app-settings></app-settings>
     <b-table :items="items"></b-table>
   </div>
 </template>
