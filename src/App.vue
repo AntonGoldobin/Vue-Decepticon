@@ -1,9 +1,9 @@
 <template>
-  <div id="main" class="bg-light">
+  <div id="main">
   <app-header></app-header>
   <p>
   </p>
-   <b-container>
+   <b-container class="for-footer">
      <b-row>
        <b-col col sm='2'>
         <app-left-menu></app-left-menu>

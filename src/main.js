@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
+import Datatable from 'vue2-datatable-component'
 import BootstrapVue from "bootstrap-vue"
 import router from './router'
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -14,6 +15,9 @@ import Settings from './components/settings.vue'
 import Filter from './components/filter-btn.vue'
 
 
+
+
+Vue.use(Datatable)
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
 Vue.component ('app-header', Header)

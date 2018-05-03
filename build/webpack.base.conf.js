@@ -18,7 +18,6 @@ const createLintingRule = () => ({
     emitWarning: !config.dev.showEslintErrorsInOverlay
   }
 })
-
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -65,8 +64,16 @@ module.exports = {
       },
       {
         test: /\.js$/,
+          loader: 'babel-loader?cacheDirectory',
+        include: [
+        PATHS.SRC,
+        /vue2-datatable-component/
+      ]
+      },
+      {
+        test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client'),resolve('node_modules/vue2-datatable-component/src')]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
