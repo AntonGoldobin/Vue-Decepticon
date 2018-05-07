@@ -75,8 +75,8 @@
       },
       genderLabel (value){
         return value === 'M'
-          ? '<span class="text-success">Male</span>'
-          : '<span class="text-info">Female</span>'
+          ? '<span class="text-primary">Male</span>'
+          : '<span class="text-warning">Female</span>'
 
       },
       formatNumber(value) {
