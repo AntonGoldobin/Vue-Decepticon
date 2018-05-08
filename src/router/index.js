@@ -1,21 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import AppTable from '../components/table.vue'
+import AppTable2 from '../components/table2.vue'
 
 Vue.use(Router)
 
-const Foo = { template: '<app-table></app-table>' }
-const Bar = { template: '<app-table2></app-table2>' }
+
 export default new Router({
   routes: [
     {
       path: '/',
       name: 'Foo',
-      component: Foo
+      component: AppTable
     },
     {
       path: '/bar',
       name: 'Bar',
-      component: Bar
+      component: AppTable2
     }
   ]
 })
